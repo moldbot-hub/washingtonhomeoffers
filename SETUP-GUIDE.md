@@ -4,7 +4,7 @@
 
 | Domain | Brand | Status |
 |--------|-------|--------|
-| washingtonhomeoffers.com | Personal (David) | DNS complete |
+| washingtonhomeoffers.com | Professional/corporate | DNS complete |
 | washingtonhomes4cash.com | State-wide company | DNS + Google Workspace complete |
 | washingtonhomeoffers.com | Professional/corporate | DNS complete |
 
@@ -44,7 +44,7 @@ const CONFIG = {
   apiUrl: 'https://app.setmate.io/api/public/cash-offer',
   apiKey: '<same key as CASH_OFFER_API_KEY>',
   domain: 'washingtonhomeoffers.com',
-  phone: '(425) XXX-XXXX',  // David's actual number
+  phone: '(425) 286-5639',  // Washington Home Offers number
   googlePlacesApiKey: '<Google Places API key>',
 };
 ```
@@ -70,7 +70,7 @@ const CONFIG = {
 4. **Secondary categories:** Real Estate Agent, Home Builder
 5. **Business type:** Service area business (no physical storefront)
 6. **Service areas:** Seattle, Everett, Tacoma, Bellevue, Renton, Kent, Auburn, Federal Way, Lakewood, Olympia, Marysville, Lynnwood, Spokane, Vancouver WA
-7. **Phone:** [David's dedicated tracking number]
+7. **Phone:** [Dedicated tracking number]
 8. **Website:** https://washingtonhomeoffers.com
 9. **Hours:** Mon-Sat 8:00 AM - 7:00 PM
 10. **Description:**
@@ -220,6 +220,6 @@ To create washingtonhomes4cash.com or washingtonhomeoffers.com:
 
 | Domain | Primary | Accent | Use |
 |--------|---------|--------|-----|
-| washingtonhomeoffers.com | Navy #1a2744 | Gold #d4a843 | Personal brand |
+| davidbuyshomes4cash.com | Navy #1a2744 | Gold #d4a843 | Personal brand |
 | washingtonhomes4cash.com | Forest Green #1a5632 | Navy #1a2744 | State-wide authority |
-| washingtonhomeoffers.com | Royal Blue #1e40af | Teal #0d9488 | Professional/clean |
+| washingtonhomeoffers.com | Royal Blue #1e3a8a | Teal #0d9488 | Professional/clean |
