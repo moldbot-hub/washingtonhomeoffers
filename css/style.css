@@ -1,21 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-
 /* ============================================
-   Washington Home Offers — Style Sheet
+   David Buys Homes For Cash — Style Sheet
    ============================================ */
 
 /* --- CSS Variables --- */
 :root {
-  --navy: #1e3a8a;
-  --navy-light: #2548a0;
-  --navy-dark: #1e293b;
-  --gold: #0d9488;
-  --gold-hover: #0f766e;
-  --gold-light: #ccfbf1;
+  --navy: #1a2744;
+  --navy-light: #243354;
+  --navy-dark: #111b30;
+  --gold: #d4a843;
+  --gold-hover: #c49a38;
+  --gold-light: #f0ddb0;
   --white: #ffffff;
-  --light-gray: #f0fdfa;
+  --light-gray: #f5f5f5;
   --medium-gray: #e0e0e0;
-  --text-dark: #0f172a;
+  --text-dark: #222222;
   --text-muted: #666666;
   --text-light: #999999;
   --shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
@@ -23,7 +21,8 @@
   --radius: 8px;
   --radius-lg: 12px;
   --transition: 0.3s ease;
-  --font-stack: 'Inter', sans-serif;
+  --font-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   --max-width: 1200px;
 }
 
@@ -839,7 +838,7 @@ p  { margin-bottom: 1rem; }
 }
 
 .cta-button-lg:hover {
-  background: #0f766e;
+  background: #c49a3a;
   transform: translateY(-1px);
 }
 
@@ -1242,7 +1241,7 @@ p  { margin-bottom: 1rem; }
 }
 
 .btn-download:hover {
-  background: #0f766e;
+  background: #c49a3a;
 }
 
 /* Error state */
@@ -1661,3 +1660,100 @@ p  { margin-bottom: 1rem; }
 
 .situations__item a { color: inherit; text-decoration: none; }
 .situations__item a:hover { text-decoration: underline; }
+
+/* ── Step 2: County lookup banner ──────────────────────────────────── */
+
+.county-loading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  background: #f0f4ff;
+  border: 1.5px solid #c7d4f5;
+  border-radius: var(--radius);
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  color: #3a5099;
+}
+
+.mini-spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #c7d4f5;
+  border-top-color: #3a5099;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  flex-shrink: 0;
+}
+
+.county-loading-text {
+  font-weight: 500;
+}
+
+.county-badge {
+  padding: 10px 16px;
+  border-radius: var(--radius);
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  border: 1.5px solid transparent;
+}
+
+.county-badge-success {
+  background: #f0fdf4;
+  border-color: #86efac;
+  color: #166534;
+}
+
+.county-badge-info {
+  background: #fffbeb;
+  border-color: #fcd34d;
+  color: #92400e;
+}
+
+/* ── Step 2: Improvements section ──────────────────────────────────── */
+
+.form-divider {
+  border: none;
+  border-top: 2px solid var(--medium-gray);
+  margin: 28px 0 24px;
+}
+
+.form-subhead {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+
+.form-hint {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Conditional reveal blocks (ADU details, additions details) */
+.conditional-block {
+  margin-top: 14px;
+  padding: 18px 20px;
+  background: #fafafa;
+  border: 1.5px solid var(--medium-gray);
+  border-radius: var(--radius);
+}
+
+.conditional-block .form-group:last-child {
+  margin-bottom: 0;
+}
+
+/* form-nav (back + next row) */
+.form-nav {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+  align-items: center;
+}
+
+.form-nav .cta-button {
+  flex: 1;
+}
