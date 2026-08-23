@@ -3,6 +3,7 @@ const assert = require('node:assert/strict');
 
 const {
   buildLeadAnalyticsEvent,
+  buildLeadMessage,
   buildLeadPayload,
   resolveLeadEndpoint,
 } = require('../js/form.js');
@@ -116,4 +117,17 @@ test('builds an analytics event with no seller PII or click identifier', () => {
 test('uses an explicit form endpoint for local verification and the SetMate endpoint otherwise', () => {
   assert.equal(resolveLeadEndpoint('http://127.0.0.1:4174/lead'), 'http://127.0.0.1:4174/lead');
   assert.equal(resolveLeadEndpoint(''), 'https://www.setmate.ai/api/public/seller-lead');
+});
+
+test('records SMS consent only when the seller opts in', () => {
+  assert.equal(buildLeadMessage('Needs work', true), 'Needs work | Consented to calls/texts (SMS opt-in)');
+  assert.equal(buildLeadMessage('Needs work', false), 'Needs work');
+  assert.equal(buildLeadMessage('', false), '');
+});
+
+test('keeps SMS consent optional on the paid landing page', () => {
+  const html = require('node:fs').readFileSync(require('node:path').join(__dirname, '..', 'snohomish-county.html'), 'utf8');
+  const checkbox = html.match(/<input[^>]+name="smsConsent"[^>]*>/)?.[0] || '';
+  assert.ok(checkbox, 'SMS consent checkbox should exist');
+  assert.equal(/\brequired\b/.test(checkbox), false);
 });

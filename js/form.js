@@ -108,6 +108,12 @@
     return clean(explicitEndpoint) || 'https://www.setmate.ai/api/public/seller-lead';
   }
 
+  function buildLeadMessage(message, smsConsent) {
+    var base = clean(message);
+    if (!smsConsent) return base;
+    return (base ? base + ' | ' : '') + 'Consented to calls/texts (SMS opt-in)';
+  }
+
   function emitLeadEvents(root, attribution, targetMarket) {
     var event = buildLeadAnalyticsEvent(attribution, targetMarket);
     root.dataLayer = root.dataLayer || [];
@@ -156,10 +162,8 @@
       if (!name) return showError('Please enter your name.');
       if (phone.replace(/\D/g, '').length < 10) return showError('Please enter a valid phone number.');
       if (!address) return showError('Please enter your property address.');
-      if (!form.smsConsent || !form.smsConsent.checked) return showError('Please agree to be contacted so we can reach you.');
 
-      var message = value('message');
-      message = (message ? message + ' | ' : '') + 'Consented to calls/texts (SMS opt-in)';
+      var message = buildLeadMessage(value('message'), Boolean(form.smsConsent && form.smsConsent.checked));
       btn.disabled = true;
       btn.textContent = 'Sending...';
 
@@ -205,6 +209,7 @@
 
   return {
     buildLeadAnalyticsEvent: buildLeadAnalyticsEvent,
+    buildLeadMessage: buildLeadMessage,
     buildLeadPayload: buildLeadPayload,
     init: init,
     resolveLeadEndpoint: resolveLeadEndpoint

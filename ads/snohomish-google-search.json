@@ -1,0 +1,334 @@
+{
+  "account": {
+    "businessName": "Washington Home Offers",
+    "currency": "USD",
+    "timeZone": "America/Los_Angeles",
+    "monthlyBudgetUsd": 3000,
+    "dailyBudgetUsd": 100,
+    "primaryGoal": "Qualified seller lead received by SetMate",
+    "phone": "+1-425-548-1993",
+    "autoTagging": true,
+    "assets": {
+      "callouts": [
+        "Sell As-Is",
+        "No Repairs Needed",
+        "No Agent Commissions",
+        "Choose Your Timeline",
+        "Local Washington Buyer",
+        "No Pressure to Accept"
+      ],
+      "sitelinks": [
+        {
+          "text": "How It Works",
+          "description1": "See the three-step process",
+          "description2": "Know what happens next",
+          "finalUrl": "https://washingtonhomeoffers.com/snohomish-county#how-it-works"
+        },
+        {
+          "text": "Compare Your Options",
+          "description1": "Review speed versus retail",
+          "description2": "Choose what fits your goals",
+          "finalUrl": "https://washingtonhomeoffers.com/snohomish-county#compare"
+        },
+        {
+          "text": "Seller Questions",
+          "description1": "Read answers before deciding",
+          "description2": "Clear principal-buyer details",
+          "finalUrl": "https://washingtonhomeoffers.com/snohomish-county#faq"
+        },
+        {
+          "text": "Request an Offer",
+          "description1": "Share the property basics",
+          "description2": "No obligation to accept",
+          "finalUrl": "https://washingtonhomeoffers.com/snohomish-county#get-offer"
+        }
+      ]
+    }
+  },
+  "campaigns": [
+    {
+      "slug": "seller-intent",
+      "name": "SNCO | Search | Seller Intent",
+      "status": "Scratchpad",
+      "campaignType": "Search",
+      "dailyBudgetUsd": 95,
+      "networks": ["Google Search"],
+      "bidStrategy": {
+        "type": "Maximize clicks",
+        "maximumCpcBidUsd": 25,
+        "graduationRule": "Switch to Maximize conversions after 15 qualified leads and verified conversion imports"
+      },
+      "locations": ["Snohomish County, Washington, United States"],
+      "positiveLocationOption": "Presence",
+      "negativeLocationOption": "Presence",
+      "languages": ["English"],
+      "demographics": {
+        "age": "All enabled",
+        "gender": "All enabled",
+        "parentalStatus": "All enabled"
+      },
+      "postalCodes": [],
+      "adSchedule": "Monday-Sunday 07:00-22:00 America/Los_Angeles",
+      "finalUrlSuffix": "utm_source=google&utm_medium=cpc&utm_campaign=snoco_seller_search&utm_content={creative}&utm_term={keyword}",
+      "negativeKeywords": [
+        "jobs",
+        "careers",
+        "salary",
+        "internship",
+        "real estate course",
+        "wholesaling course",
+        "wholesaling training",
+        "seminar",
+        "bootcamp",
+        "podcast",
+        "wholesale contract",
+        "contract template",
+        "buyers list",
+        "homes for sale",
+        "houses for sale",
+        "buy a house",
+        "rent",
+        "rental",
+        "apartment",
+        "section 8",
+        "mortgage",
+        "refinance",
+        "loan modification",
+        "realtor",
+        "real estate agent",
+        "zillow",
+        "redfin",
+        "appraisal",
+        "free home value",
+        "commercial property",
+        "foreclosure help",
+        "stop foreclosure",
+        "foreclosure rescue",
+        "bankruptcy attorney",
+        "king county",
+        "pierce county",
+        "skagit county",
+        "whatcom county",
+        "seattle",
+        "tacoma",
+        "bellevue",
+        "renton",
+        "kent",
+        "auburn",
+        "federal way",
+        "bellingham",
+        "mount vernon"
+      ],
+      "adGroups": [
+        {
+          "name": "Sell House Fast",
+          "keywords": [
+            {"text": "sell my house fast", "matchType": "Phrase"},
+            {"text": "sell my house fast", "matchType": "Exact"},
+            {"text": "sell house fast", "matchType": "Phrase"},
+            {"text": "sell house fast", "matchType": "Exact"},
+            {"text": "sell my home fast", "matchType": "Phrase"},
+            {"text": "need to sell my house fast", "matchType": "Phrase"},
+            {"text": "sell house quickly", "matchType": "Phrase"},
+            {"text": "fast cash offer for house", "matchType": "Phrase"}
+          ],
+          "ad": {
+            "finalUrl": "https://washingtonhomeoffers.com/snohomish-county",
+            "path1": "sell-house",
+            "path2": "snohomish",
+            "headlines": [
+              "Sell Your House Fast",
+              "Snohomish County Home Buyer",
+              "Get an As-Is Cash Offer",
+              "No Repairs or Showings",
+              "Choose Your Closing Date",
+              "Local Washington Home Buyer",
+              "Sell Without Agent Fees",
+              "A Direct Buyer, Not a Broker",
+              "No Pressure to Accept",
+              "Start With a Short Form",
+              "Call or Text 425-548-1993",
+              "Washington Home Offers"
+            ],
+            "descriptions": [
+              "Tell us about your Snohomish County property. We'll review it and discuss an as-is offer.",
+              "Sell without repairs, showings, or agent commissions. Choose a closing date that fits.",
+              "Washington Home Offers buys as a principal, not as your agent. No pressure to accept.",
+              "Call or use the short form to see whether a direct cash sale fits your situation."
+            ]
+          }
+        },
+        {
+          "name": "Cash Home Buyer",
+          "keywords": [
+            {"text": "cash home buyers", "matchType": "Phrase"},
+            {"text": "cash home buyers", "matchType": "Exact"},
+            {"text": "cash buyer for my house", "matchType": "Phrase"},
+            {"text": "we buy houses", "matchType": "Phrase"},
+            {"text": "sell house for cash", "matchType": "Phrase"},
+            {"text": "cash home buyer near me", "matchType": "Phrase"},
+            {"text": "local cash home buyers", "matchType": "Phrase"},
+            {"text": "cash offer for my house", "matchType": "Exact"}
+          ],
+          "ad": {
+            "finalUrl": "https://washingtonhomeoffers.com/snohomish-county",
+            "path1": "cash-offer",
+            "path2": "snohomish",
+            "headlines": [
+              "Cash Buyer for Your House",
+              "We Buy Snohomish Houses",
+              "Sell Your House As-Is",
+              "Get an As-Is Cash Offer",
+              "No Repairs or Showings",
+              "Choose Your Closing Date",
+              "Local Washington Home Buyer",
+              "Sell Without Agent Fees",
+              "A Direct Buyer, Not a Broker",
+              "No Pressure to Accept",
+              "Call or Text 425-548-1993",
+              "Washington Home Offers"
+            ],
+            "descriptions": [
+              "Request an as-is offer for a Snohomish County house. No repairs or showings needed.",
+              "Washington Home Offers buys as a principal, not as your agent. No pressure to accept.",
+              "Choose a closing timeline that works for you and avoid traditional agent commissions.",
+              "Call or submit the short form to see whether a direct cash sale fits your situation."
+            ]
+          }
+        },
+        {
+          "name": "As-Is and Repairs",
+          "keywords": [
+            {"text": "sell house as is", "matchType": "Phrase"},
+            {"text": "sell house as is", "matchType": "Exact"},
+            {"text": "sell house needing repairs", "matchType": "Phrase"},
+            {"text": "sell fixer upper house", "matchType": "Phrase"},
+            {"text": "sell damaged house", "matchType": "Phrase"},
+            {"text": "house needs too much work", "matchType": "Phrase"},
+            {"text": "sell house without repairs", "matchType": "Exact"},
+            {"text": "as is home buyer", "matchType": "Phrase"}
+          ],
+          "ad": {
+            "finalUrl": "https://washingtonhomeoffers.com/snohomish-county",
+            "path1": "sell-as-is",
+            "path2": "snohomish",
+            "headlines": [
+              "Sell a House That Needs Work",
+              "No Repairs Before You Sell",
+              "As-Is Buyer in Snohomish",
+              "Skip Repairs and Showings",
+              "Get an As-Is Cash Offer",
+              "Choose Your Closing Date",
+              "Local Washington Home Buyer",
+              "Sell Without Agent Fees",
+              "A Direct Buyer, Not a Broker",
+              "No Pressure to Accept",
+              "Call or Text 425-548-1993",
+              "Washington Home Offers"
+            ],
+            "descriptions": [
+              "Tell us what the property needs. We buy Snohomish County houses in as-is condition.",
+              "Skip repairs, cleaning, showings, and traditional agent commissions before you sell.",
+              "Washington Home Offers buys as a principal, not as your agent. No pressure to accept.",
+              "Call or submit the short form to discuss the property and your preferred timeline."
+            ]
+          }
+        },
+        {
+          "name": "Inherited and Estate",
+          "keywords": [
+            {"text": "sell inherited house", "matchType": "Phrase"},
+            {"text": "sell inherited house", "matchType": "Exact"},
+            {"text": "cash buyer inherited house", "matchType": "Phrase"},
+            {"text": "inherited property buyer", "matchType": "Phrase"},
+            {"text": "sell probate house", "matchType": "Phrase"},
+            {"text": "sell estate house", "matchType": "Phrase"},
+            {"text": "cash offer inherited property", "matchType": "Exact"},
+            {"text": "sell inherited property as is", "matchType": "Phrase"}
+          ],
+          "ad": {
+            "finalUrl": "https://washingtonhomeoffers.com/snohomish-county",
+            "path1": "inherited",
+            "path2": "snohomish",
+            "headlines": [
+              "Sell an Inherited House",
+              "Inherited Property Cash Offer",
+              "Local Buyer for Estate Homes",
+              "Sell the Property As-Is",
+              "No Repairs or Showings",
+              "Choose Your Closing Date",
+              "Local Washington Home Buyer",
+              "Sell Without Agent Fees",
+              "A Direct Buyer, Not a Broker",
+              "No Pressure to Accept",
+              "Call or Text 425-548-1993",
+              "Washington Home Offers"
+            ],
+            "descriptions": [
+              "Discuss an inherited Snohomish County property with a local principal home buyer.",
+              "Sell in as-is condition without repairs, showings, or traditional agent commissions.",
+              "Choose a timeline that works for the estate. There is no pressure to accept an offer.",
+              "Call or submit the short form to tell us about the property and your situation."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "slug": "brand",
+      "name": "SNCO | Search | Brand",
+      "status": "Scratchpad",
+      "campaignType": "Search",
+      "dailyBudgetUsd": 5,
+      "networks": ["Google Search"],
+      "bidStrategy": {
+        "type": "Manual CPC",
+        "maximumCpcBidUsd": 4
+      },
+      "locations": ["Snohomish County, Washington, United States"],
+      "positiveLocationOption": "Presence",
+      "negativeLocationOption": "Presence",
+      "languages": ["English"],
+      "demographics": {
+        "age": "All enabled",
+        "gender": "All enabled",
+        "parentalStatus": "All enabled"
+      },
+      "postalCodes": [],
+      "adSchedule": "Monday-Sunday 07:00-22:00 America/Los_Angeles",
+      "finalUrlSuffix": "utm_source=google&utm_medium=cpc&utm_campaign=snoco_brand&utm_content={creative}&utm_term={keyword}",
+      "negativeKeywords": [],
+      "adGroups": [
+        {
+          "name": "Washington Home Offers",
+          "keywords": [
+            {"text": "washington home offers", "matchType": "Phrase"},
+            {"text": "washington home offers", "matchType": "Exact"},
+            {"text": "washingtonhomeoffers", "matchType": "Exact"},
+            {"text": "washington home offers snohomish", "matchType": "Exact"}
+          ],
+          "ad": {
+            "finalUrl": "https://washingtonhomeoffers.com/snohomish-county",
+            "path1": "home-offers",
+            "path2": "snohomish",
+            "headlines": [
+              "Washington Home Offers",
+              "Snohomish County Home Buyer",
+              "Sell Your House As-Is",
+              "No Repairs or Showings",
+              "A Direct Buyer, Not a Broker",
+              "No Pressure to Accept",
+              "Call or Text 425-548-1993",
+              "Choose Your Closing Date"
+            ],
+            "descriptions": [
+              "Washington Home Offers buys Snohomish County houses in as-is condition.",
+              "Tell us about the property and discuss whether a direct cash sale fits your plans.",
+              "We buy as a principal, not as your agent. There is no pressure to accept an offer."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
