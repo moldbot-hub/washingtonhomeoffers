@@ -104,6 +104,10 @@
     };
   }
 
+  function resolveLeadEndpoint(explicitEndpoint) {
+    return clean(explicitEndpoint) || 'https://www.setmate.ai/api/public/seller-lead';
+  }
+
   function emitLeadEvents(root, attribution, targetMarket) {
     var event = buildLeadAnalyticsEvent(attribution, targetMarket);
     root.dataLayer = root.dataLayer || [];
@@ -166,6 +170,7 @@
         tracking = {};
       }
       var targetMarket = form.getAttribute('data-target-market') || '';
+      var leadEndpoint = resolveLeadEndpoint(form.getAttribute('data-lead-endpoint') || '');
       var payload = buildLeadPayload({
         name: name,
         phone: phone,
@@ -175,7 +180,7 @@
         message: message
       }, tracking, targetMarket, document.cookie || '');
 
-      root.fetch('https://www.setmate.ai/api/public/seller-lead', {
+      root.fetch(leadEndpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
@@ -201,6 +206,7 @@
   return {
     buildLeadAnalyticsEvent: buildLeadAnalyticsEvent,
     buildLeadPayload: buildLeadPayload,
-    init: init
+    init: init,
+    resolveLeadEndpoint: resolveLeadEndpoint
   };
 });

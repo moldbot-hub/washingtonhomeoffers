@@ -4,6 +4,7 @@ const assert = require('node:assert/strict');
 const {
   buildLeadAnalyticsEvent,
   buildLeadPayload,
+  resolveLeadEndpoint,
 } = require('../js/form.js');
 
 const values = {
@@ -110,4 +111,9 @@ test('builds an analytics event with no seller PII or click identifier', () => {
   ]) {
     assert.equal(serialized.includes(forbidden), false);
   }
+});
+
+test('uses an explicit form endpoint for local verification and the SetMate endpoint otherwise', () => {
+  assert.equal(resolveLeadEndpoint('http://127.0.0.1:4174/lead'), 'http://127.0.0.1:4174/lead');
+  assert.equal(resolveLeadEndpoint(''), 'https://www.setmate.ai/api/public/seller-lead');
 });

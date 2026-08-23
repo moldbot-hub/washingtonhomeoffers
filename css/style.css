@@ -219,6 +219,58 @@ p{margin-bottom:1rem}
 .footer__legal p{color:rgba(255,255,255,.6);margin-bottom:8px}
 .footer__legal a{color:rgba(255,255,255,.8)}
 
+/* Snohomish paid-search landing page */
+.paid-page{background:#fff}
+.paid-header{background:#fff;border-bottom:1px solid var(--line)}
+.paid-header__inner{height:68px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.paid-header__logo{font-weight:800;font-size:1.15rem;color:var(--primary);white-space:nowrap}
+.paid-header__logo span{color:var(--accent-hover)}
+.paid-header__phone{font-weight:800;color:var(--primary);text-align:right}
+.paid-header__phone span{font-size:.76rem;color:var(--muted);font-weight:600;display:block;text-transform:uppercase;letter-spacing:.06em}
+.paid-hero{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--hero-a),var(--hero-b));color:#fff}
+.paid-hero__photo{position:absolute;inset:0;background:linear-gradient(90deg,rgba(18,51,47,.96) 0%,rgba(18,51,47,.88) 42%,rgba(18,51,47,.54) 100%),url('/images/home4.webp') center/cover no-repeat}
+.paid-hero__inner{position:relative;display:grid;grid-template-columns:1fr .92fr;gap:52px;align-items:center;padding:64px 0 72px}
+.paid-kicker{display:inline-flex;padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);font-size:.78rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:#ffe1b9;margin-bottom:20px}
+.paid-hero h1{color:#fff;max-width:13ch;margin-bottom:18px}
+.paid-hero__lead{font-size:1.13rem;line-height:1.7;color:rgba(255,255,255,.92);max-width:52ch}
+.paid-benefits{list-style:none;display:grid;gap:10px;margin:24px 0;padding:0}
+.paid-benefits li{position:relative;padding-left:30px;color:#fff;font-weight:600}
+.paid-benefits li::before{content:"\2713";position:absolute;left:0;top:0;width:21px;height:21px;border-radius:50%;background:var(--accent);color:#1a1208;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:900}
+.paid-hero__phone{margin:0;color:rgba(255,255,255,.82);font-size:.94rem}
+.paid-hero__phone a{color:#fff;font-weight:800;text-decoration:underline;text-underline-offset:3px}
+.paid-form{padding:30px}
+.paid-form h2{font-size:1.55rem;margin-bottom:8px}
+.paid-proof{background:var(--primary-dark);color:#fff}
+.paid-proof__grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.paid-proof__grid>div{padding:22px 24px;text-align:center;border-right:1px solid rgba(255,255,255,.12)}
+.paid-proof__grid>div:last-child{border-right:0}
+.paid-proof strong{display:block;color:var(--accent);font-size:1.18rem;margin-bottom:3px}
+.paid-proof span{font-size:.82rem;color:rgba(255,255,255,.74)}
+.paid-section{padding:68px 0}
+.paid-local{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+.paid-local h2{margin-bottom:16px}
+.paid-local__copy>p{color:var(--muted)}
+.paid-local__image{min-height:380px;border-radius:var(--radius);background:url('/images/home1.webp') center/cover no-repeat;box-shadow:var(--shadow-lg)}
+.paid-cities{display:flex;flex-wrap:wrap;gap:9px;margin-top:26px}
+.paid-cities span{padding:8px 13px;border-radius:999px;background:#fff;border:1px solid var(--line);color:var(--primary);font-size:.82rem;font-weight:700}
+.paid-tradeoff__inner{display:grid;grid-template-columns:.8fr 1.2fr;gap:54px;padding:38px 42px;border:1px solid var(--tint-border);border-radius:var(--radius);background:var(--tint)}
+.paid-tradeoff h2{margin-bottom:0}
+.paid-tradeoff p{color:var(--muted)}
+.paid-tradeoff p:last-child{margin-bottom:0}
+.paid-final{background:linear-gradient(135deg,var(--hero-a),var(--hero-b));color:#fff;padding:54px 0}
+.paid-final__inner{display:flex;align-items:center;justify-content:space-between;gap:30px}
+.paid-final h2{color:#fff;margin-bottom:6px}
+.paid-final p{color:rgba(255,255,255,.82);margin:0}
+.paid-final__actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}
+.paid-footer{background:#102c29;color:rgba(255,255,255,.72);padding:34px 0 24px}
+.paid-footer__inner{display:flex;align-items:center;justify-content:space-between;gap:26px}
+.paid-footer strong{color:#fff}
+.paid-footer p{font-size:.84rem;margin:5px 0 0;color:rgba(255,255,255,.62)}
+.paid-footer__links{display:flex;gap:20px}
+.paid-footer__links a{color:#fff;font-size:.86rem;font-weight:600}
+.paid-footer__legal{border-top:1px solid rgba(255,255,255,.12);margin-top:24px;padding-top:18px}
+.paid-footer__legal p{font-size:.76rem}
+
 /* Responsive */
 @media(max-width:1040px){
   .nav__toggle{display:flex}
@@ -240,10 +292,35 @@ p{margin-bottom:1rem}
   .nav__links.open{transform:translateY(0)}
   .nav__links>a{padding:12px}
   .nav__cta,.nav__phone{text-align:center}
+  .paid-hero__inner{grid-template-columns:1fr;gap:34px;padding:48px 0 56px}
+  .paid-hero h1{max-width:16ch}
+  .paid-proof__grid{grid-template-columns:1fr 1fr}
+  .paid-proof__grid>div:nth-child(2){border-right:0}
+  .paid-proof__grid>div:nth-child(-n+2){border-bottom:1px solid rgba(255,255,255,.12)}
+  .paid-local,.paid-tradeoff__inner{grid-template-columns:1fr;gap:28px}
+  .paid-local__image{min-height:280px}
+  .paid-final__inner{align-items:flex-start;flex-direction:column}
+  .paid-final__actions{justify-content:flex-start}
 }
 @media(max-width:560px){
   .form-row{grid-template-columns:1fr}
   .footer__grid{grid-template-columns:1fr}
   .cards--4{grid-template-columns:1fr 1fr}
   .cta-band{padding:30px;text-align:center;justify-content:center}
+  .paid-header__inner{height:62px}
+  .paid-header__logo{font-size:.96rem}
+  .paid-header__phone{font-size:.88rem}
+  .paid-header__phone span{display:none}
+  .paid-hero__inner{padding:36px 0 44px}
+  .paid-hero__photo{background:linear-gradient(135deg,rgba(18,51,47,.97),rgba(18,51,47,.84)),url('/images/home4.webp') center/cover no-repeat}
+  .paid-form{padding:22px}
+  .paid-proof__grid{grid-template-columns:1fr}
+  .paid-proof__grid>div{border-right:0;border-bottom:1px solid rgba(255,255,255,.12)}
+  .paid-proof__grid>div:last-child{border-bottom:0}
+  .paid-section{padding:52px 0}
+  .paid-local__image{min-height:220px}
+  .paid-tradeoff__inner{padding:28px 24px}
+  .paid-final__actions{width:100%}
+  .paid-final__actions .btn{width:100%}
+  .paid-footer__inner{align-items:flex-start;flex-direction:column}
 }
