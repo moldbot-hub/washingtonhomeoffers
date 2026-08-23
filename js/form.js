@@ -111,7 +111,9 @@
   function buildLeadMessage(message, smsConsent) {
     var base = clean(message);
     if (!smsConsent) return base;
-    return (base ? base + ' | ' : '') + 'Consented to calls/texts (SMS opt-in)';
+    var marker = 'Consented to calls/texts (SMS opt-in)';
+    if (!base) return marker;
+    return base.slice(0, 240 - marker.length - 3) + ' | ' + marker;
   }
 
   function emitLeadEvents(root, attribution, targetMarket) {

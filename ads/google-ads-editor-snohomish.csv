@@ -1,15 +1,15 @@
 Campaign,Campaign Type,Campaign Daily Budget,Campaign status,Networks,Languages,Bid Strategy Type,Maximum CPC bid limit,Final URL suffix,Location,Ad Group,Ad Group Status,Max CPC,Keyword,Type,Status,Final URL,Path 1,Path 2,Headline 1,Headline 2,Headline 3,Headline 4,Headline 5,Headline 6,Headline 7,Headline 8,Headline 9,Headline 10,Headline 11,Headline 12,Headline 13,Headline 14,Headline 15,Description 1,Description 2,Description 3,Description 4,Callout text,Sitelink text,Platform targeting
-"<Account-level>",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"Sell As-Is",,
-"<Account-level>",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"No Repairs Needed",,
-"<Account-level>",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"No Agent Commissions",,
-"<Account-level>",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"Choose Your Timeline",,
-"<Account-level>",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"Local Washington Buyer",,
-"<Account-level>",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"No Pressure to Accept",,
-"<Account-level>",,,,,,,,,,,,,,,,"https://washingtonhomeoffers.com/snohomish-county#how-it-works",,,,,,,,,,,,,,,,,,"See the three-step process","Know what happens next",,,,"How It Works","All"
-"<Account-level>",,,,,,,,,,,,,,,,"https://washingtonhomeoffers.com/snohomish-county#compare",,,,,,,,,,,,,,,,,,"Review speed versus retail","Choose what fits your goals",,,,"Compare Your Options","All"
-"<Account-level>",,,,,,,,,,,,,,,,"https://washingtonhomeoffers.com/snohomish-county#faq",,,,,,,,,,,,,,,,,,"Read answers before deciding","Clear principal-buyer details",,,,"Seller Questions","All"
-"<Account-level>",,,,,,,,,,,,,,,,"https://washingtonhomeoffers.com/snohomish-county#get-offer",,,,,,,,,,,,,,,,,,"Share the property basics","No obligation to accept",,,,"Request an Offer","All"
-"SNCO | Search | Seller Intent","Search","95","Scratchpad","Google Search","English","Maximize clicks","25","utm_source=google&utm_medium=cpc&utm_campaign=snoco_seller_search&utm_content={creative}&utm_term={keyword}",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"SNCO | Search | Seller Intent","Search","93.68","Scratchpad","Google Search","English","Maximize clicks","25","utm_source=google&utm_medium=cpc&utm_campaign=snoco_seller_search&utm_content={creative}&utm_term={keyword}",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"SNCO | Search | Seller Intent",,,,,,,,,,,,,,,"Paused",,,,,,,,,,,,,,,,,,,,,,,"Sell As-Is",,
+"SNCO | Search | Seller Intent",,,,,,,,,,,,,,,"Paused",,,,,,,,,,,,,,,,,,,,,,,"No Repairs Needed",,
+"SNCO | Search | Seller Intent",,,,,,,,,,,,,,,"Paused",,,,,,,,,,,,,,,,,,,,,,,"No Agent Commissions",,
+"SNCO | Search | Seller Intent",,,,,,,,,,,,,,,"Paused",,,,,,,,,,,,,,,,,,,,,,,"Choose Your Timeline",,
+"SNCO | Search | Seller Intent",,,,,,,,,,,,,,,"Paused",,,,,,,,,,,,,,,,,,,,,,,"Local Washington Buyer",,
+"SNCO | Search | Seller Intent",,,,,,,,,,,,,,,"Paused",,,,,,,,,,,,,,,,,,,,,,,"No Pressure to Accept",,
+"SNCO | Search | Seller Intent",,,,,,,,,,,,,,,"Paused","https://washingtonhomeoffers.com/snohomish-county#how-it-works",,,,,,,,,,,,,,,,,,"See the three-step process","Know what happens next",,,,"How It Works","All"
+"SNCO | Search | Seller Intent",,,,,,,,,,,,,,,"Paused","https://washingtonhomeoffers.com/snohomish-county#compare",,,,,,,,,,,,,,,,,,"Review speed versus retail","Choose what fits your goals",,,,"Compare Your Options","All"
+"SNCO | Search | Seller Intent",,,,,,,,,,,,,,,"Paused","https://washingtonhomeoffers.com/snohomish-county#faq",,,,,,,,,,,,,,,,,,"Read answers before deciding","Clear principal-buyer details",,,,"Seller Questions","All"
+"SNCO | Search | Seller Intent",,,,,,,,,,,,,,,"Paused","https://washingtonhomeoffers.com/snohomish-county#get-offer",,,,,,,,,,,,,,,,,,"Share the property basics","No obligation to accept",,,,"Request an Offer","All"
 "SNCO | Search | Seller Intent",,,,,,,,,"Snohomish County, Washington, United States",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 "SNCO | Search | Seller Intent",,,,,,,,,,,,,"jobs","Campaign negative",,,,,,,,,,,,,,,,,,,,,,,,,,
 "SNCO | Search | Seller Intent",,,,,,,,,,,,,"careers","Campaign negative",,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -99,6 +99,16 @@ Campaign,Campaign Type,Campaign Daily Budget,Campaign status,Networks,Languages,
 "SNCO | Search | Seller Intent",,,,,,,,,,"Inherited and Estate",,,"sell inherited property as is","Phrase","Paused",,,,,,,,,,,,,,,,,,,,,,,,,
 "SNCO | Search | Seller Intent",,,,,,,,,,"Inherited and Estate",,,,,"Paused","https://washingtonhomeoffers.com/snohomish-county","inherited","snohomish","Sell an Inherited House","Inherited Property Cash Offer","Local Buyer for Estate Homes","Sell the Property As-Is","No Repairs or Showings","Choose Your Closing Date","Local Washington Home Buyer","Sell Without Agent Fees","A Direct Buyer, Not a Broker","No Pressure to Accept","Call or Text 425-548-1993","Washington Home Offers",,,,"Discuss an inherited Snohomish County property with a local principal home buyer.","Sell in as-is condition without repairs, showings, or traditional agent commissions.","Choose a timeline that works for the estate. There is no pressure to accept an offer.","Call or submit the short form to tell us about the property and your situation.",,,
 "SNCO | Search | Brand","Search","5","Scratchpad","Google Search","English","Manual CPC","4","utm_source=google&utm_medium=cpc&utm_campaign=snoco_brand&utm_content={creative}&utm_term={keyword}",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"SNCO | Search | Brand",,,,,,,,,,,,,,,"Paused",,,,,,,,,,,,,,,,,,,,,,,"Sell As-Is",,
+"SNCO | Search | Brand",,,,,,,,,,,,,,,"Paused",,,,,,,,,,,,,,,,,,,,,,,"No Repairs Needed",,
+"SNCO | Search | Brand",,,,,,,,,,,,,,,"Paused",,,,,,,,,,,,,,,,,,,,,,,"No Agent Commissions",,
+"SNCO | Search | Brand",,,,,,,,,,,,,,,"Paused",,,,,,,,,,,,,,,,,,,,,,,"Choose Your Timeline",,
+"SNCO | Search | Brand",,,,,,,,,,,,,,,"Paused",,,,,,,,,,,,,,,,,,,,,,,"Local Washington Buyer",,
+"SNCO | Search | Brand",,,,,,,,,,,,,,,"Paused",,,,,,,,,,,,,,,,,,,,,,,"No Pressure to Accept",,
+"SNCO | Search | Brand",,,,,,,,,,,,,,,"Paused","https://washingtonhomeoffers.com/snohomish-county#how-it-works",,,,,,,,,,,,,,,,,,"See the three-step process","Know what happens next",,,,"How It Works","All"
+"SNCO | Search | Brand",,,,,,,,,,,,,,,"Paused","https://washingtonhomeoffers.com/snohomish-county#compare",,,,,,,,,,,,,,,,,,"Review speed versus retail","Choose what fits your goals",,,,"Compare Your Options","All"
+"SNCO | Search | Brand",,,,,,,,,,,,,,,"Paused","https://washingtonhomeoffers.com/snohomish-county#faq",,,,,,,,,,,,,,,,,,"Read answers before deciding","Clear principal-buyer details",,,,"Seller Questions","All"
+"SNCO | Search | Brand",,,,,,,,,,,,,,,"Paused","https://washingtonhomeoffers.com/snohomish-county#get-offer",,,,,,,,,,,,,,,,,,"Share the property basics","No obligation to accept",,,,"Request an Offer","All"
 "SNCO | Search | Brand",,,,,,,,,"Snohomish County, Washington, United States",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 "SNCO | Search | Brand",,,,,,,,,,"Washington Home Offers","Paused","4",,,,,,,,,,,,,,,,,,,,,,,,,,,,
 "SNCO | Search | Brand",,,,,,,,,,"Washington Home Offers",,,"washington home offers","Phrase","Paused",,,,,,,,,,,,,,,,,,,,,,,,,

@@ -123,6 +123,9 @@ test('records SMS consent only when the seller opts in', () => {
   assert.equal(buildLeadMessage('Needs work', true), 'Needs work | Consented to calls/texts (SMS opt-in)');
   assert.equal(buildLeadMessage('Needs work', false), 'Needs work');
   assert.equal(buildLeadMessage('', false), '');
+  const capped = buildLeadMessage('x'.repeat(240), true);
+  assert.ok(capped.length <= 240);
+  assert.match(capped, /Consented to calls\/texts \(SMS opt-in\)$/);
 });
 
 test('keeps SMS consent optional on the paid landing page', () => {

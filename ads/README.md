@@ -24,9 +24,9 @@ node --test tests\*.test.cjs
 
 | Campaign | Daily budget | Purpose |
 | --- | ---: | --- |
-| `SNCO | Search | Seller Intent` | $95 | Phrase/exact motivated-seller searches |
+| `SNCO | Search | Seller Intent` | $93.68 | Phrase/exact motivated-seller searches |
 | `SNCO | Search | Brand` | $5 | Protect Washington Home Offers brand searches |
-| Total | $100/day | Approximately $3,000 per 30-day month |
+| Total | $98.68/day | At or below $3,000 using Google's 30.4-day billing-month calculation |
 
 The seller campaign starts on Maximize Clicks with a $25 maximum CPC guardrail. Do not switch to Maximize Conversions until the imported `generate_lead` conversion is verified and SetMate has received at least 15 qualified paid leads.
 

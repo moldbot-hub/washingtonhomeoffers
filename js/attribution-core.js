@@ -17,7 +17,7 @@
     'msclkid',
     'fbclid'
   ];
-  var MARKETING_KEYS = PARAMS.concat(['fbc']);
+  var MARKETING_KEYS = PARAMS;
 
   function clean(value) {
     if (typeof value !== 'string') return '';

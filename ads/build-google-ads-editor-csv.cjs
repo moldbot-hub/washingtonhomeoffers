@@ -31,20 +31,6 @@ const HEADERS = [
 function buildRows(plan) {
   const rows = [];
 
-  for (const callout of plan.account.assets.callouts) {
-    rows.push({ Campaign: '<Account-level>', 'Callout text': callout });
-  }
-  for (const sitelink of plan.account.assets.sitelinks) {
-    rows.push({
-      Campaign: '<Account-level>',
-      'Sitelink text': sitelink.text,
-      'Description 1': sitelink.description1,
-      'Description 2': sitelink.description2,
-      'Final URL': sitelink.finalUrl,
-      'Platform targeting': 'All',
-    });
-  }
-
   for (const campaign of plan.campaigns) {
     const maxCpc = campaign.bidStrategy.maximumCpcBidUsd || '';
     rows.push({
@@ -58,6 +44,25 @@ function buildRows(plan) {
       'Maximum CPC bid limit': maxCpc,
       'Final URL suffix': campaign.finalUrlSuffix,
     });
+
+    for (const callout of plan.account.assets.callouts) {
+      rows.push({
+        Campaign: campaign.name,
+        'Callout text': callout,
+        Status: 'Paused',
+      });
+    }
+    for (const sitelink of plan.account.assets.sitelinks) {
+      rows.push({
+        Campaign: campaign.name,
+        'Sitelink text': sitelink.text,
+        'Description 1': sitelink.description1,
+        'Description 2': sitelink.description2,
+        'Final URL': sitelink.finalUrl,
+        'Platform targeting': 'All',
+        Status: 'Paused',
+      });
+    }
 
     for (const location of campaign.locations) {
       rows.push({ Campaign: campaign.name, Location: location });

@@ -4,7 +4,7 @@
     "currency": "USD",
     "timeZone": "America/Los_Angeles",
     "monthlyBudgetUsd": 3000,
-    "dailyBudgetUsd": 100,
+    "dailyBudgetUsd": 98.68,
     "primaryGoal": "Qualified seller lead received by SetMate",
     "phone": "+1-425-548-1993",
     "autoTagging": true,
@@ -51,7 +51,7 @@
       "name": "SNCO | Search | Seller Intent",
       "status": "Scratchpad",
       "campaignType": "Search",
-      "dailyBudgetUsd": 95,
+      "dailyBudgetUsd": 93.68,
       "networks": ["Google Search"],
       "bidStrategy": {
         "type": "Maximize clicks",

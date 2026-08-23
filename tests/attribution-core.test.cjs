@@ -91,3 +91,22 @@ test('reads Meta cookies without retaining unrelated cookies', () => {
     { fbp: 'fb.1.1', fbc: 'fb.1.click' },
   );
 });
+
+test('does not replace a Meta latest touch with a persistent fbc cookie on navigation', () => {
+  const landing = mergeTouches(null, null, {
+    utm_source: 'facebook',
+    utm_campaign: 'snoco-meta',
+    fbclid: 'fb-click-1',
+    fbc: 'fb.1.click',
+    landing: '/snohomish-county',
+  });
+
+  assert.deepEqual(
+    mergeTouches(landing.first, landing.last, {
+      fbc: 'fb.1.click',
+      landing: '/privacy.html',
+      referrer: 'https://washingtonhomeoffers.com/snohomish-county',
+    }),
+    landing,
+  );
+});

@@ -19,8 +19,13 @@ test('exports the county target, negative keywords, and account assets', () => {
   const rows = buildRows(plan);
   assert.equal(rows.filter((row) => row.Location === 'Snohomish County, Washington, United States').length, plan.campaigns.length);
   assert.ok(rows.some((row) => row.Type === 'Campaign negative' && row.Keyword === 'foreclosure help'));
-  assert.equal(rows.filter((row) => row['Callout text']).length, plan.account.assets.callouts.length);
-  assert.equal(rows.filter((row) => row['Sitelink text']).length, plan.account.assets.sitelinks.length);
+  assert.equal(rows.filter((row) => row['Callout text']).length, plan.account.assets.callouts.length * plan.campaigns.length);
+  assert.equal(rows.filter((row) => row['Sitelink text']).length, plan.account.assets.sitelinks.length * plan.campaigns.length);
+  for (const row of rows.filter((item) => item['Callout text'] || item['Sitelink text'])) {
+    assert.notEqual(row.Campaign, '<Account-level>');
+    assert.ok(plan.campaigns.some((campaign) => campaign.name === row.Campaign));
+    assert.equal(row.Status, 'Paused');
+  }
 });
 
 test('produces a quoted UTF-8 CSV with recognized English headers', () => {

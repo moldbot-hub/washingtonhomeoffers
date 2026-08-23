@@ -3,9 +3,11 @@ const assert = require('node:assert/strict');
 
 const plan = require('../ads/snohomish-google-search.json');
 
-test('caps the approved budget at $3,000 per month and $100 per day', () => {
+test('caps the approved budget at $3,000 per Google billing month', () => {
   assert.equal(plan.account.monthlyBudgetUsd, 3000);
-  assert.equal(plan.campaigns.reduce((sum, campaign) => sum + campaign.dailyBudgetUsd, 0), 100);
+  const daily = plan.campaigns.reduce((sum, campaign) => sum + campaign.dailyBudgetUsd, 0);
+  assert.equal(daily, 98.68);
+  assert.ok(daily * 30.4 <= plan.account.monthlyBudgetUsd);
 });
 
 test('keeps every campaign in a non-serving draft state', () => {
