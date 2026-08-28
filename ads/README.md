@@ -42,7 +42,7 @@ Google Ads Editor cannot safely express every account-level or advanced targetin
 6. Use English and the 7:00 a.m.–10:00 p.m. Pacific schedule in the plan.
 7. Turn on auto-tagging. Keep the campaign UTM suffixes from the JSON/CSV.
 8. Disable automatically created assets and broad-match expansion for the initial test.
-9. Link the Google Analytics property that owns measurement ID `G-22KRBSFPDX`.
+9. Link the Google Analytics property that owns measurement ID `G-F5N9DBL4ZW`.
 10. Import the GA4 `generate_lead` event into Google Ads as the primary seller-lead conversion only after a successful SetMate submission has been observed end to end.
 11. Verify that `(425) 548-1993` reaches the correct acquisitions line before adding a call asset or call conversion. The import intentionally omits the call asset until that check is complete.
 12. Keep both campaigns paused until billing, conversion tracking, landing-page deployment, and SetMate deployment are all verified.
