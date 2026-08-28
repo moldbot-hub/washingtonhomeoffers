@@ -125,7 +125,7 @@
       source: event.source,
       campaign: event.campaign
     };
-    if (typeof root.gtag === 'function') root.gtag('event', 'generate_lead', eventParameters);
+    if (root._smAnalytics) root._smAnalytics.lead('seller-lead');
     if (typeof root.fbq === 'function') root.fbq('track', 'Lead', eventParameters);
   }
 
@@ -142,10 +142,11 @@
       return (form[name] && form[name].value || '').trim();
     }
 
-    function showError(message) {
+    function showError(message, category) {
       status.textContent = message;
       status.className = 'form-status error';
       status.style.display = 'block';
+      if (category && root._smAnalytics) root._smAnalytics.error('seller-lead', category);
     }
 
     function reset() {
@@ -161,9 +162,9 @@
       var name = value('name');
       var phone = value('phone');
       var address = value('propertyAddress');
-      if (!name) return showError('Please enter your name.');
-      if (phone.replace(/\D/g, '').length < 10) return showError('Please enter a valid phone number.');
-      if (!address) return showError('Please enter your property address.');
+      if (!name) return showError('Please enter your name.', 'validation');
+      if (phone.replace(/\D/g, '').length < 10) return showError('Please enter a valid phone number.', 'validation');
+      if (!address) return showError('Please enter your property address.', 'validation');
 
       var message = buildLeadMessage(value('message'), Boolean(form.smsConsent && form.smsConsent.checked));
       btn.disabled = true;
@@ -199,11 +200,11 @@
           success.style.display = 'block';
           success.scrollIntoView({ behavior: 'smooth', block: 'center' });
         } else {
-          showError(result && result.error || 'Something went wrong. Please call us at (425) 548-1993.');
+          showError(result && result.error || 'Something went wrong. Please call us at (425) 548-1993.', 'server');
           reset();
         }
       }).catch(function () {
-        showError('Could not submit. Please call us at (425) 548-1993.');
+        showError('Could not submit. Please call us at (425) 548-1993.', 'network');
         reset();
       });
     });
@@ -213,6 +214,7 @@
     buildLeadAnalyticsEvent: buildLeadAnalyticsEvent,
     buildLeadMessage: buildLeadMessage,
     buildLeadPayload: buildLeadPayload,
+    emitLeadEvents: emitLeadEvents,
     init: init,
     resolveLeadEndpoint: resolveLeadEndpoint
   };

@@ -5,6 +5,7 @@ const {
   buildLeadAnalyticsEvent,
   buildLeadMessage,
   buildLeadPayload,
+  emitLeadEvents,
   resolveLeadEndpoint,
 } = require('../js/form.js');
 
@@ -112,6 +113,31 @@ test('builds an analytics event with no seller PII or click identifier', () => {
   ]) {
     assert.equal(serialized.includes(forbidden), false);
   }
+});
+
+test('keeps the dataLayer and Meta events while GA4 uses the canonical helper', () => {
+  const dataLayer = [];
+  const canonical = [];
+  const meta = [];
+  const directGtag = [];
+  const root = {
+    dataLayer,
+    _smAnalytics: { lead: (formId) => canonical.push(formId) },
+    fbq: (...args) => meta.push(args),
+    gtag: (...args) => directGtag.push(args),
+  };
+
+  emitLeadEvents(root, tracking.lastTouch, 'snohomish-county');
+
+  assert.deepEqual(dataLayer, [{
+    event: 'seller_lead_submitted',
+    market: 'snohomish-county',
+    source: 'google',
+    campaign: 'snoco-search',
+  }]);
+  assert.deepEqual(canonical, ['seller-lead']);
+  assert.equal(meta.length, 1);
+  assert.deepEqual(directGtag, []);
 });
 
 test('uses an explicit form endpoint for local verification and the SetMate endpoint otherwise', () => {
