@@ -1,0 +1,33 @@
+{
+  "domain": "washingtonhomeoffers.com",
+  "provider": "OpenArt",
+  "model": "gpt-image-2",
+  "quality": "high",
+  "resolution_tier": "4k",
+  "resolution_note": "OpenArt 4K locked 4:3 preset reports 2688 x 2016 pixels; actual output dimensions are preserved.",
+  "source_dimensions": {
+    "width": 2688,
+    "height": 2016
+  },
+  "history_id": "v67OMDns1WM9ZUUVVXwm",
+  "resource_id": "G9ewlLp8q4u5LjqFZBoa",
+  "generated_at": "2026-09-05T16:34:26.216850+00:00",
+  "theme": "Net proceeds / aubergine and ivory",
+  "prompt": "Create a premium editorial website hero image. Art direction: Net proceeds / aubergine and ivory. Subject: Refined home-sale decision still life on an ivory desk: two blank paper options, a dark aubergine notebook, elegant simple calculator and brass house key, sophisticated clear comparison concept, no printed characters. Outstanding material realism, sophisticated composition, natural optical perspective, carefully controlled lighting and tactile fine detail. Conceptual illustrative scene, not a named real property or completed customer project. No people, faces, readable text, numerals, logos, watermarks, street addresses, license plates, branded products or fake credentials. Horizontal landscape 4:3 composition, central crop-safe focal point with breathing room for responsive use. Avoid collage borders, excessive HDR, plastic CGI sheen and generic stock-photo staging.",
+  "kind": "AI-generated illustration",
+  "caption": "Illustrative concept; not a completed customer project.",
+  "assets": {
+    "hero-small.webp": {
+      "bytes": 28434,
+      "sha256": "e810a613ffa7e4ab984fcadd0bc6c9f9e897bfae62d83dfa3ff3a9a02ad49634"
+    },
+    "hero.webp": {
+      "bytes": 136088,
+      "sha256": "03b7d1e7fdc7e8731b023d6bb8a942e5fda9c538d2dd3bb3074b31bfd63428bc"
+    },
+    "og.jpg": {
+      "bytes": 108368,
+      "sha256": "f336f7345f75cb9834d28adcbae7af2e25afb87ff0a75c1e09e0db49bd993f7c"
+    }
+  }
+}
