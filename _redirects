@@ -1,8 +1,19 @@
-/areas/bellevue                    /areas.html  301
-/areas/bellingham                  /areas.html  301
-/areas/seattle                     /areas.html  301
-/areas/lakewood                    /areas.html  301
-/areas/bellevue.html               /areas.html  301
-/areas/everett                     /areas.html  301
-/areas/olympia                     /areas.html  301
+/areas/bellevue                    /areas  301
+/areas/bellingham                  /areas  301
+/areas/seattle                     /areas  301
+/areas/lakewood                    /areas  301
+/areas/bellevue.html               /areas  301
+/areas/everett                     /areas  301
+/areas/olympia                     /areas  301
 /snohomish-county.html            /snohomish-county  301
+
+/about.html /about 301
+/areas.html /areas 301
+/faq.html /faq 301
+/foreclosure-help.html /foreclosure-help 301
+/get-offer.html /get-offer 301
+/how-it-works.html /how-it-works 301
+/privacy.html /privacy 301
+/seller-planning-guide.html /seller-planning-guide 301
+/terms.html /terms 301
+/index.html / 301
